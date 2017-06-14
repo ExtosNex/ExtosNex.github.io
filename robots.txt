@@ -2,8 +2,8 @@
 # We also provide an extensive API: https://developer.github.com/
 
 User-agent: CCBot
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -59,8 +59,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: coccoc
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -116,8 +116,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: Daumoa
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -173,8 +173,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: dotbot
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -230,8 +230,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: duckduckbot
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -287,8 +287,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: EtaoSpider
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -344,8 +344,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: Googlebot
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -401,8 +401,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: HTTrack
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -458,8 +458,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: ia_archiver
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -515,8 +515,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: IntuitGSACrawler
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -572,8 +572,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: Mail.RU_Bot
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -629,8 +629,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: msnbot
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -686,8 +686,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: Bingbot
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -743,8 +743,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: naverbot
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -800,8 +800,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: red-app-gsa-p-one
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -857,8 +857,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: rogerbot
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -914,8 +914,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: SandDollar
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -971,8 +971,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: seznambot
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -1028,8 +1028,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: Slurp
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -1085,8 +1085,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: Swiftbot
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -1142,8 +1142,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: Telefonica
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -1199,8 +1199,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: teoma
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -1256,8 +1256,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: Twitterbot
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
@@ -1313,8 +1313,8 @@ Disallow: /*.atom
 Disallow: /login
 
 User-agent: Yandex
-Allow: /*/*/tree/master
-Allow: /*/*/blob/master
+Disallow: /*/*/tree/master
+Disallow: /*/*/blob/master
 Disallow: /ekansa/Open-Context-Data
 Disallow: /ekansa/opencontext-*
 Disallow: /*/*/pulse
