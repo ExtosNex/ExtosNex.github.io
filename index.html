@@ -1,16 +1,28 @@
 <!doctype html>
 <html>
  <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
   <title>
    Home
   </title>
+	 
   <!--Favicon (With help from Stackoverflow)-->
-		 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
- </head>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+ 
+</head>
+
 <body>
- <h1>"Hello World" is too 
-  <a href="https://extosnex.github.io/">
-   generic</a>
+ <h1>"Hello World" is too generic
   </h1>
+	
+	<script>
+$(document).ready(function(){
+    $("*").mousedown(function(){
+        alert("Look! A Distraction!!");
+	  $("*").hide();
+    });
+});		
+	</script>
 </body>
 </html>
