@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <body>
@@ -9,16 +10,22 @@ important website
   <source src="theme_song.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-	<center>
 		<a href="theme_song.mp3">
-		 <h1>Click Me</h1>
+		 <img src="loading.gif" alt="loading...">
 		</a>
-	</center>
 <script>
 function myFunction() {
     var x = document.getElementById("myAudio").autoplay;
 }
 </script>
+<style>
+  img {
+    position: absolute;
+    left:550px;
+    top: 200px;
+    z-index: 0;
+  }
+</style>
 <!--mobile hates me-->
 </body>
 </html>
