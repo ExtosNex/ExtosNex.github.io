@@ -1,34 +1,56 @@
+
 <!doctype html>
 <html>
- <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-	</script>
-  <title>
-   Home
-  </title>
-	 
-  <!--Favicon (With help from Stackoverflow)-->
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
- 
-</head>
-
-<body>
- <h1 id="h1">"Hello World" is too generic
-  </h1>
-<br>
-<br>
-	<center>
-	<a href="/importantthings"><p>:P</p></a>
-	</center>
-	<script>
+  <head>
+    <title>
+      Web Filter Violation
+    </title>
+  </head>
+  <body>
+    <p style="margin-left: 40px; margin-top: 40px;">
+      <span style="font-size:22px;">
+        <span style="color:#CC0000;">
+          <strong>
+            <span style="font-family:verdana,geneva,sans-serif;">
+              Web Page Blocked!
+            </span>
+          </strong>
+        </span>
+      </span>
+    </p>
+    
+    <p style="margin-left: 40px;">
+      <br />
+      <span style="font-size:12px;">
+        <span style="font-family:verdana,geneva,sans-serif;">
+          You have tried to <span style="font-family:verdana,geneva,sans-serif;" id="link">access</span> a web page which is in violation of your internet usage policy.
+          <br />
+          This event has been logged.
+        </span>
+      </span>
+    </p>
+    
+    <p style="margin-left: 40px;">
+      <span style="font-size:12px;">
+        <span style="font-family:verdana,geneva,sans-serif;">
+          URL: extosnex.github.io/
+          <br />
+          Category: Too Cool for xXSchoolXx Rawr xD 420
+          <br />
+          <br />
+          
+        </span>
+      </span>
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script>
 $(document).ready(function(){
-    $("#h1").mouseenter(function(){
-	  $("#h1").hide();
+    $("#link").mouseenter(function(){
 	    alert("Look! A Distraction!!");
+	    window.open("https://extosnex.github.io/nice/", "_self")
     });
-});		
+});
 	</script>
-	<h2> yolo swag nugget 420 blaze it</h2>
-	</center>
-</body>
+  </body>
 </html>
