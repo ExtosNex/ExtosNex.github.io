@@ -1,7 +1,63 @@
+<!doctype html>
 <html>
-<title>
- glub glub
- </title>
+  <title>
+    glub glub
+  </title>
+  
+ <style>
+   body {
+      background-color: #90b4d5;
+    }
+    
+    h1 {
+      text-align: center;
+      color: black;
+      font-family: verdana;
+    }
+    
+    h2 {
+      text-align: center;
+      color: white;
+      font-family: verdana;
+    }
+    
+    p {
+      text-align: center;
+      color: white;
+      font-family: verdana;
+      font-size: 20px;
+    }
+ </style>
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+ </script>
+  
+  <!--
+  
+  I'm sorry for the this next part
+  
+  
+  
+  
+  
+  
+  (NOT)
+  
+  -->
+  
+	<script type="text/javascript">
+    $(document).ready(function() {
+      $("#poke1").mouseenter(function(){
+        $("#poke1").hide();
+        $("#poke2").show();
+      });
+      $("#poke2").mouseenter(function(){
+        $("#poke2").hide();
+        $("#poke1").show();
+      });
+    });
+</script>
+ 
 <body>
   <h1>
    kachow!
@@ -19,5 +75,17 @@
    Tea-Triss
   </h2>
  </a>
+ <br>
+ <a href="#">
+  <h2 id="poke1">
+     Pokemon Saphire
+  </h2>
+  <br>
+  <br>
+  <br>
+  <h2 id="poke2" style="display: none;">
+     Pokemon Saphire
+  </h2>
+</a>
 </body>
 </html>
