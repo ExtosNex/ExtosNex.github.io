@@ -56,11 +56,23 @@
         $("#poke1").show();
       });
     });
+    
+    $(document).ready(function(){
+      $("#kachow").mouseenter(function(){
+        $("#mcqween").show();
+        window.setTimeout(mcqween,2000);
+        function mcqween(){
+        $("#mcqween").hide();
+        };
+      });
+    });
 </script>
  
 <body>
   <h1>
+    <span id="kachow">
    kachow!
+   </span>
   </h1>
  <br>
  <br>
@@ -76,7 +88,7 @@
   </h2>
  </a>
  <br>
- <a href="#">
+ <a href="#" target="_blank">
   <h2 id="poke1">
      Pokemon Saphire
   </h2>
@@ -87,5 +99,8 @@
      Pokemon Saphire
   </h2>
 </a>
+<div align="middle">
+<img src="https://media.tenor.co/images/272f90b42e1050298eb84a7918492f7c/raw" width="500px" height="250px" id="mcqween" style="display: none;">
+</div>
 </body>
 </html>
