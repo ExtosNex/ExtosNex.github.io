@@ -48,12 +48,28 @@
 	<script type="text/javascript">
     $(document).ready(function() {
       $("#poke1").mouseenter(function(){
+        window.setTimeout(p1,175);
+        function p1(){
         $("#poke1").hide();
         $("#poke2").show();
+        $("#poke3").hide();
+        };
       });
       $("#poke2").mouseenter(function(){
-        $("#poke2").hide();
+        window.setTimeout(p2,175);
+        function p2(){
         $("#poke1").show();
+        $("#poke2").hide();
+        $("#poke3").show();
+        };
+      });
+      $("#poke3").mouseenter(function(){
+        window.setTimeout(p3,175);
+        function p3(){
+        $("#poke1").show();
+        $("#poke2").show();
+        $("#poke3").hide();
+       };
       });
     });
     
@@ -67,7 +83,6 @@
       });
     });
 </script>
- 
 <body>
   <h1>
     <span id="kachow">
@@ -88,7 +103,7 @@
   </h2>
  </a>
  <br>
- <a href="#" target="_blank">
+ <a href="https://extosnex.github.io/nice/congratulations.html">
   <h2 id="poke1">
      Pokemon Saphire
   </h2>
@@ -97,6 +112,12 @@
   <br>
   <h2 id="poke2" style="display: none;">
      Pokemon Saphire
+  </h2>
+  <br>
+  <br>
+  <br>
+  <h2 id="poke3" style="display: none;">
+      Pokemon Saphire
   </h2>
 </a>
 <div align="middle">
