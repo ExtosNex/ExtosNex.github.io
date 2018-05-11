@@ -6,12 +6,12 @@ function password(){
 		document.getElementById("passwod").disabled = true;
 		document.getElementById("submit").disabled = true;
 		document.getElementById("btncont").disabled = false;
-	}else {
+	}else{
 		alert("Incorrect passcode");
 	}
 }
 function cont(){
 	alert("Proceeding...");
-	document.getElementById("redirect").innerHTML = "redirecting in " + seconds + " seconds." ;
+	document.getElementById("btncont").disabled = true;
 	window.open("externalfile:drive-1ba9fbf7bb2479e93f4d62250cc734ee60e8e155/root/Year 10/redirecting.html");
 }
