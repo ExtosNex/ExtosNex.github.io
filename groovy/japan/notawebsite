@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<title>This is Not a Website</title>
+	<style>
+		h1{
+			color: crimson;
+			font-style: arial;
+		}
+		.button{
+			background-color: white;
+			border-color: crimson;
+			text-align: center;
+			color: crimson;
+			font-size: 16px;
+			font-style: arial;
+			cursor: pointer;
+		}
+	</style>
+	<body>
+		<h1>THIS IS NOT A WEBSITE</h1>
+		<h2>You are currently not connected to the internet</h2>
+		<a href = "https://extosnex.github.io"><h3>Turn back now</h3></a>
+		Input Security Code:<input type = "password" id = "passwod">
+		<button type = "button" class = "button" id = "submit" onclick = password()>SUBMIT</button><br>
+		<button type = "button" class = "button" id = "btncont" onclick = cont()>CONTINUE</button>
+		<h3 id = "redirect"></h3>
+		
+		<script src = "https://extosnex.github.io/groovy/japan/js.js">
+		// externalfile:drive-1ba9fbf7bb2479e93f4d62250cc734ee60e8e155/root/Year 10/github.extosex.io.html
+    </script>
+    
+	</body>
+</html>
