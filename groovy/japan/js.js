@@ -13,5 +13,5 @@ function password(){
 function cont(){
 	alert("Proceeding...");
 	document.getElementById("btncont").disabled = true;
-	window.open("https://www.google.com.au");
+	window.open("externalfile:drive-1ba9fbf7bb2479e93f4d62250cc734ee60e8e155/root/Year 10/redirecting.html");
 }
