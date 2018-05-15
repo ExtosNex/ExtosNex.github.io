@@ -4,28 +4,78 @@
       important website
       </title>
     <body>
-<style>
-  h1 {
-    position: absolute;
-    left:550px;
-    top: 200px;
-    z-index: 0;
-  }
-</style>
-<script>
-function myFunction() {
-    var x = document.getElementById("myAudio").autoplay;
+        <style>
+        /*  h1 {
+            position: absolute;
+            left:550px;
+            top: 200px;
+            z-index: 0;
+        */
+            
+          h1,h2{
+            text-align:center;
+            position: absolute;
+            left:300px;
+            top: 200px;
+            z-index: 0;
+            font-size: 100px;
 }
-</script>
-<audio id="myAudio" autoplay>
+.rainbow {
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 3s infinite;
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 3s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 3s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+	5%{color: red;}
+	35%{color: yellow;}
+	65%{color: green;}
+	85%{color: blue;}
+	0%{color: orange;}
+}
+
+          
+          body {
+            background-color: #000000;
+        }
+        </style>
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myAudio").autoplay;
+        }
+        </script>
+          <audio id="myAudio" autoplay>
   <!--
   <source src="hardbass.ogg" type="audio/ogg">
   -->
   <source src="HARDBASS.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-		<a href="HARDBASS.mp3">
-		 <h1>CHEEKI BREEKI</h1>
+		<a href="https://extosnex.github.io/nice">
+		 <h1 class="rainbow">CHEEKI BREEKI</h1>
 		</a>
 </body>
 </html>
