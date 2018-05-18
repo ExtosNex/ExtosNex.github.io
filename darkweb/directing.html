@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		LED Desk Lamp
+
+
+
+
+
+
+
+
+
+
+
+
+
+Contents:
+Section
+Page Number
+Problem
+3
+Solution
+3
+Subsystem
+3
+Idea Research
+3
+Design Research
+3
+Final Design
+3
+Materials
+4
+Tools
+5
+Building
+5
+An addition to the plan
+6-8
+The Print
+8-9
+A Mistake
+9
+Fixing the Mistake
+9
+Evaluation
+10
+Conclusion
+10
+Bibliography
+10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Problem:
+
+My desk currently does not have a lamp on it which can sometimes make it hard to study or do homework. I also want to be able to change the colour of the lamp so that it suits my theme when I am playing games.
+
+The type of client who would typically face this kind of problem is a student who wants to study at night without turning all of the lights on and also likes the ability to customise absolutely everything.
+
+The Solution:
+I am planning to build a lamp that has three potentiometers. The three pots will control the red, green and blue in the RGB LED so that any possible colour can be made. The case for the LED will be a box with the three pots and a thin sphere that the LED will be in on top.
+
+Subsystems involved:
+An electrical system that controls the LED
+I am going to use my freetronics kit (pretty much a rip off Arduino).
+
+Research:
+I could not find many similar products apart from the ones other students are making. Mine will be different to theirs as the colour can be changed automatically and manually.
+
+Design research:
+I was originally going to use a spherical bulb but other people in the class were using this design so I chose to use a thin cube as a globe.
+
+Final design:
+My final design was inspired James Turrell's ‘Breathing Light’ (right) at the Los Angeles County Museum of Art. In this exhibition you walk into a room that slowly cycles through colours and causes a perception phenomenon called the Ganzfeld effect. I plan to make knobs out of 6061 aluminum on a lathe.
+
+
+Materials:
+
+Material:
+Cost:
+Use:
+Picture:
+Potentiometers x3
+$2.50 each
+Variable resistors to create the analogue input that controls the brightness of the red, green and blue.
+
+Wires
+Unknown
+To complete all of the electrical circuits
+
+RGB LED
+Around $7 but price is irrelevant as I already have one
+This is the light source of the lamp
+
+Freetronics processor
+$29 but I already have one
+Used to read the values of the pots and control everything
+
+Soldering kit
+$35
+Used to solder all of the wires together
+
+
+
+
+
+
+
+
+
+
+Tools needed:
+
+Tool
+Use
+Picture
+Lathe
+To machine the aluminium that I am using to make the knobs
+
+Pliers
+They are just useful for a lot of things
+
+Wire strippers
+To strip the insulation off the wires so I can solder
+
+3D printer
+To print my box and globe
+
+
+Building:
+I found an old Freetronics kit that was Arduino compatible. It had most of the parts in it already (RGB LED, processor, wires and resistors) I was going to buy the other things I needed (potentiometers).
+
+I wired in the RGB LED according to the guide that came with the kit and blended a few different codes that I found together. I used the code to control an RGB LED and the code to read the analogue input if the potentiometers. After about 10 minutes of fine tuning the code worked and the 5k ohm pots had a nice feel.
+
+Now that I knew what value of resistor to get I went and bout 3 5k ohm resistors. I also bought a protoboard, wires of various colours  and my own soldering kit so I can work on things at home.
+
+I soldered all of the wires to the proto board. I had to make sure that no bits of solder that shouldn’t be connected were connected. To do this I used a multimeter and tested the resistance over the wires. Everything was wired properly.
+
+An addition to the plan:
+I thought it would be nice to have a code that ran when the potentiometers are all the way down that randomizes the colour and slowly changes it. My finished code was:
+#define MIN_TIME 10
+#define MAX_TIME 50
+#define MAX_LEVEL 255
+ 
+#define LED_R 9
+#define LED_G 10
+#define LED_B 11
+ 
+unsigned long ulTimeLastR, ulTimeLastG, ulTimeLastB;
+unsigned long ulRStep, ulGStep, ulBStep;
+int nR(0), nRDir(1), nG(0), nGDir(1), nB(0), nBDir(1);
+ 
+void setup() {
+  Serial.begin(38400);
+  pinMode(LED_R, OUTPUT);
+  pinMode(LED_G, OUTPUT);
+  pinMode(LED_B, OUTPUT);
+  randomSeed(analogRead(0));                          	// Seed random number generator
+  ulTimeLastR = ulTimeLastG = ulTimeLastB = millis(); 	// Initialise with time now
+  ulRStep = random(MIN_TIME, MAX_TIME);               	// Random step for each colour
+  ulGStep = random(MIN_TIME, MAX_TIME);
+  ulBStep = random(MIN_TIME, MAX_TIME);
+}
+ 
+void loop() {
+ 
+  // Time now
+  unsigned long ulTimeNow = millis();
+ 
+  // Current pot settings
+  int lightlevelR = analogRead(A0);
+  int lightlevelG = analogRead(A1);
+  int lightlevelB = analogRead(A2);
+ 
+  // If all pots are off, random mode
+  if(lightlevelR == 0 && lightlevelG == 0 && lightlevelB == 0){
+	// Red loop
+	if ( (ulTimeNow - ulTimeLastR) >= ulRStep ){
+  	nR += nRDir;
+  	if ( nR <= 0 ){
+    	nRDir = 1;
+    	ulRStep = random(MIN_TIME, MAX_TIME);
+  	}
+  	else if ( nR >= MAX_LEVEL ) {
+    	nRDir = -1;
+    	ulRStep = random(MIN_TIME, MAX_TIME);
+  	}
+  	ulTimeLastR = ulTimeNow;
+  	analogWrite(LED_R, nR);
+	}
+
+ 
+	// Green loop
+	if ( (ulTimeNow - ulTimeLastG) >= ulGStep ){
+  	nG += nGDir;
+  	if ( nG <= 0 ){
+    	nGDir = 1;
+    	ulGStep = random(MIN_TIME, MAX_TIME);
+  	}
+  	else if ( nG >= MAX_LEVEL ) {
+    	nGDir = -1;
+    	ulGStep = random(MIN_TIME, MAX_TIME);
+  	}
+  	ulTimeLastG = ulTimeNow;
+  	analogWrite(LED_G, nG);
+	}
+
+ 
+	// Blue loop
+  if ( (ulTimeNow - ulTimeLastB) >= ulBStep ){
+  	nB += nBDir;
+  	if ( nB <= 0 ){
+    	nBDir = 1;
+    	ulBStep = random(MIN_TIME, MAX_TIME);
+  	}
+  	else if ( nB >= MAX_LEVEL ) {
+    	nBDir = -1;
+    	ulBStep = random(MIN_TIME, MAX_TIME);
+  	}
+  	ulTimeLastB = ulTimeNow;
+  	analogWrite(LED_B, nB);
+	}
+  }
+ 
+	// Otherwise show pot settings
+  else{
+  	analogWrite(LED_R, lightlevelR / 4);
+  	analogWrite(LED_G, lightlevelG / 4);
+  	analogWrite(LED_B, lightlevelB / 4);
+ 
+  	// Reset the random mode
+  	nR = nG = nB = 0;
+  	nRDir = nGDir = nBDir = 1;
+	}
+
+ 
+  // Wait min time step
+  delay(MIN_TIME);
+}
+
+
+The Print:
+The print turned out alright with a few signs of warping<a href = "https://extosnex.github.io/darkweb/notawebsite.html">.</a> The globe turned out really nice. Overall a decent print.
+
+
+A Mistake:
+I printed the walls too thick and the thread of the potentiometers didn’t come out so I couldn’t screw them on.
+
+Fixing the Mistake:
+I but the box in the milling machine and used an end mill to make a flat indent that I could then thread the washer and nut onto. This completely fixed the mistake.
+
+
+
+
+Evaluation:
+The product worked but the LED was not as bright as expected so it’s more mood lighting than a desk lamp. I believe that I didn’t use my time very wisely as I had to ask for an extension.
+
+Conclusion:
+Overall the product worked quite well and I would definitely use it. The product was not very expensive at all. I would have used a brighter LED and a smaller board so that the whole build could be brighter and smaller
+
+
+
+
+	</body>
+</html>
