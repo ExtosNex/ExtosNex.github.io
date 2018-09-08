@@ -3,10 +3,10 @@ $(document).ready(function() {
         window.setTimeout(p1,175);
         function p1(){
         $("#poke1").hide();
-        $ akuwdfawiygf 2").show();
-        $ akuwdfawiygf 3").hide();
-        } akuwdfawiygf 
-      }); akuwdfawiygf 
+        $("2").show();
+        $("3").hide();
+        }  
+      });  
       $("#poke2").mouseenter(function(){
         window.setTimeout(p2,175);
         function p2(){
@@ -24,10 +24,10 @@ $(document).ready(function() {
        };
       });
     });
-     akuwdfawiygf 
-    $(document). akuwdfawiygf ready(function(){
-      $("#kachow akuwdfawiygf ").mouseenter(function(){
-        $("#mcqw akuwdfawiygf een").show();
+      
+    $(document).ready(function(){
+      $("#kachow").mouseenter(function(){
+        $("#mcqween").show();
         window.setTimeout(mcqween,2000);
         function mcqween(){
         $("#mcqween").hide();
