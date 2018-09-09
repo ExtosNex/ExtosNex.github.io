@@ -1,7 +1,7 @@
 body {
       background-color: #cfe0c3;
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Doppio One';font-size;
     }
     /*
     Alternate Colours
@@ -10,21 +10,17 @@ body {
     #cfe0c3
     */
     h1 {
-      text-align: unset
-      color: black;
-      font-family: verdana;
+      text-align: unset;
+      color: black;    
     }
-    
     h2 {
       text-align: unset;
       color: white;
-      font-family: verdana;
     }
     
     p {
       text-align: center;
       color: white;
-      font-family: verdana;
       font-size: 20px;
     }
   #main{
@@ -78,6 +74,7 @@ ul {
     position: absolute;
     height: 150%;
     overflow: auto;
+    /*(border: 1px solid #8f8f8f;*/
 }
 
 li a {
@@ -85,6 +82,7 @@ li a {
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
+    border-bottom: 2px solid #555;
 }
 
 li a.active {
