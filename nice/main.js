@@ -34,3 +34,14 @@ $(document).ready(function() {
         };
       });
     });
+
+    $(document).ready(function(){
+      $("#3t").mouseenter(function(){
+        alert("Hidden Easter Egg!!");
+        if (confirm("Do you dare to Continue?")) {
+          window.open("3t.html")
+      } else {
+          alert("Canceled");
+      }
+      });
+    });
