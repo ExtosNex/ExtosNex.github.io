@@ -37,11 +37,21 @@ $(document).ready(function() {
 
     $(document).ready(function(){
       $("#3t").mouseenter(function(){
+        $("#block").show();
+        window.setTimeout(blockhide,500);
+        function blockhide(){
+          $("#block").hide();
+        }
+      });
+    });
+
+    $(document).ready(function(){
+      $("#block").mouseenter(function(){
         alert("Hidden Easter Egg!!");
         if (confirm("Do you dare to Continue?")) {
-          window.open("3t.html")
+          window.open("3t.html","_self")
       } else {
           alert("Canceled");
       }
-      });
-    });
+      })
+    })
