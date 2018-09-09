@@ -38,7 +38,7 @@ $(document).ready(function() {
     $(document).ready(function(){
       $("#3t").mouseenter(function(){
         $("#block").show();
-        window.setTimeout(blockhide,500);
+        window.setTimeout(blockhide,1000);
         function blockhide(){
           $("#block").hide();
         }
