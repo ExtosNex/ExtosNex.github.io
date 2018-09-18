@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <title>
+    Redirect...
+  </title>
+  <script>
+  //i know that there's an easier way but i cbf
+  setInterval(countdown4,1000)
+  function countdown4(){
+  document.getElementById("number").innerHTML = "4";
+  }
+  setInterval(countdown3,2000)
+  function countdown3(){
+  document.getElementById("number").innerHTML = "3";
+  }
+  setInterval(countdown2,3000)
+  function countdown2(){
+  document.getElementById("number").innerHTML = "2";
+  }
+  setInterval(countdown1,4000)
+  function countdown1(){
+  document.getElementById("number").innerHTML = "1";
+  }
+  setInterval(countdown0,4900)
+  function countdown0(){
+  document.getElementById("number").innerHTML = "0";
+  }
+  
+    setInterval(redirect,5000);
+    function redirect(){
+      window.location.replace("https://memedealer420.github.io");
+    }
+  </script>
+  <body>
+    <br><br><br>
+    <h1 style="text-align:center;">
+      This website location has been moved
+    </h1>
+    <hr>
+    <h2 style="text-align:center;">Redirecting in <a id=number>5</a> Seconds...</h2>
+    <p style="text-align:center;">yeet</p>
+  </body>
+</html>
