@@ -1,3 +1,4 @@
+window.location.replace("redirect.html");
 $(document).ready(function() {
       $("#poke1").mouseenter(function(){
         window.setTimeout(p1,175);
